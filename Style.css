@@ -66,6 +66,8 @@ i:hover {
 .textStone {
   color: #ffffff;
   font-family: 'Noto Serif', serif;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .text2 {
