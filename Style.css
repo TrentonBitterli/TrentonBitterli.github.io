@@ -240,7 +240,7 @@ hr {
 .testTitle {
   font-size: 6vw;
   color: #000000;
-  text-shadow: 2px 2px 5px #224067;
+  text-shadow: 1px 1px 3px #224067;
   text-transform: uppercase;
   letter-spacing: 5px;
   animation: text-animation 3s ease-in-out;
@@ -249,7 +249,7 @@ hr {
 .trentTitle {
   font-size: 4vw;
   color: #000000;
-  text-shadow: 2px 2px 5px gray;
+  text-shadow: 1px 1px 3px gray;
   text-transform: uppercase;
   letter-spacing: 5px;
   animation: text-animation 3s ease-in-out;
@@ -258,7 +258,7 @@ hr {
 .valTitle {
   font-size: 50px;
   color: #000000;
-  text-shadow: 2px 2px 5px gray;
+  text-shadow: 1px 1px 3px gray;
   text-transform: uppercase;
   letter-spacing: 5px;
   animation: text-animation 3s ease-in-out;
