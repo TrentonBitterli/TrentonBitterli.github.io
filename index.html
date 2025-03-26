@@ -67,121 +67,21 @@
       <a class="text" href="https://www.youtube.com/@trentonbitterl2533"><i
           class="fa-brands fa-youtube increaseIcon"></i></a>
     </div>
-
-    <div class="container-mid">
-      <hr class="full">
-      <h3 class="text">Portfolio Artifacts: </h3>
-      <a class="button" href="#VRPopup">
-        <figure class="container-mid">
-        <img class="img-fluid stoneImage" src="Images\Gifs\MazeEye.png" alt="Mini-Game Mayhem VR">
-        </a>
-        <figcaption>Click for Popup</figcaption>
-      </figure>
-      <a class="button" href="#ValPopup">
-        <figure class="container-mid">
-      <img class="img-fluid stoneImage" src="Images\Gifs\Valorant Website Logo.jpg" alt="Valorant Website Logo">
-        </a>
-      <figcaption>Click for Popup</figcaption>
-      </figure>
-    <a class="button" href="#UnrealPopup">
-      <figrue class="container-mid">
-      <img class="img-fluid stoneImage" src="Images\Gifs\Unreal.jpg" alt="Unreal Engine Logo">
-      </a>
-      <figcaption>Click for Popup</figcaption>
-      </figrue>
-    </div>
-
-    <!-- VR Popup -->
-    <div class="containter-fluid overlay" id="VRPopup">
-      <div class="containter-fluid popup">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Mini-Game Mayhem VR</h1>
-            <hr class="full">
-            <br>
-          </div>
+    <hr class="full">
+    <div id="portfolio-container" class="container-mid">
+      <h3 class="text">Portfolio Artifacts:</h3>
+      <div id="project-display" class="position-relative text-center">
+        <button id="prev-project" class="circle-btn left-btn">&lt;</button>
+        <img id="project-image" class="img-fluid stoneImage" src="" alt="Project Image">
+        <div>
+          <h2 id="project-title"></h2>
+          <p id="project-description"></p>
         </div>
-        <div class='row'>
-          <div class='col-md-3'>
-            <img src="Images\Gifs\MazeEye.png" class="img-fluid" alt="Mini-Game Mayhem VR">
-          </div>
-          <div class="col-md-9">
-            <p class="textStone"> I created a VR platformer game in Unity as my individual game project for GIMM.
-              You can
-              find the link <a href="UnrealEngine.html">here</a> or in my navigation on the top of the page.
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <a class="close" href="#home">Close Popup</a>
-          </div>
-        </div>
+        <button id="next-project" class="circle-btn right-btn">&gt;</button>
       </div>
     </div>
 
-    <!-- Valorant Website Popup Popup -->
-    <div class="containter-fluid overlay" id="ValPopup">
-      <div class="containter-fluid popup">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Valorant Website</h1>
-            <hr class="full">
-            <br>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-3'>
-            <img src="Images\Gifs\Valorant Website Logo.jpg" class="img-fluid" alt="Valorant Webpage">
-          </div>
-          <div class="col-md-9">
-            <p class="textStone">This is my Valorant Website I created in GIMM 260.
-              You can
-              find the link <a href="Valorant_Artifact.html">here</a> or in my navigation on the top of the page.
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <a class="close" href="#home">Close Popup</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Unreal Engine Popup Popup -->
-    <div class="containter-fluid overlay" id="UnrealPopup">
-      <div class="containter-fluid popup">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Unreal Engine Projects</h1>
-            <hr class="full">
-            <br>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-3'>
-            <img src="Images\Gifs\Unreal.jpg" class="img-fluid" alt="Unreal Engine">
-          </div>
-          <div class="col-md-9">
-            <p class="textStone">These are my Unreal Engine projects I created throughout GIMM.
-              You can
-              find the link <a href="UnrealEngine.html">here</a> or in my navigation on the top of the page.
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <a class="close" href="#home">Close Popup</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
+    <script src="CyclingProjects.js"></script>
 
     <div class="container-mid">
       <hr class="full">

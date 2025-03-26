@@ -410,3 +410,29 @@ main {
   background: linear-gradient(90deg, rgba(46, 47, 113, 1) 0%, rgba(77, 146, 182, 1) 55%, rgba(66, 141, 156, 1) 100%);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+.circle-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+
+.circle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
