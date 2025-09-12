@@ -439,9 +439,7 @@ main {
 
 
 .achievement-banner {
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  margin-top: 20px;
   background-color: #198754;
   color: white;
   padding: 12px 20px;
@@ -449,10 +447,11 @@ main {
   font-weight: bold;
   font-family: 'Noto Serif', serif;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  z-index: 9999;
   display: none;
   animation: slideIn 1s ease-out forwards;
+  text-align: center;
 }
+
 
 @keyframes slideIn {
   from {
