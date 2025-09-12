@@ -436,3 +436,31 @@ main {
 .circle-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+
+.achievement-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #198754;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Noto Serif', serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 9999;
+  display: none;
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
