@@ -82,13 +82,13 @@ i:hover {
   border: 1px solid #325d95;
   text-align: center;
   box-shadow: 2px 2px 4px #325d95;
-  width: 400px;
   margin: 0 auto;
 }
 
 #bio-tab img {
-  width: 100px;
-  border-radius: 50%;
+  width: 280px;
+  height: 350px;
+  border-radius: 10%;
 }
 
 #bio-tab h2 {
