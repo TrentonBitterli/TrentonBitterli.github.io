@@ -86,8 +86,9 @@ i:hover {
 }
 
 #bio-tab img {
-  width: 280px;
-  height: 350px;
+  max-width: 300px; /* bigger on desktop */
+  width: 100%;      /* shrink on mobile */
+  height: auto;
   border-radius: 10%;
 }
 
