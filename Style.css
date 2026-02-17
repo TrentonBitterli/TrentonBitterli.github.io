@@ -464,3 +464,73 @@ main {
     transform: translateY(0);
   }
 }
+
+.Intunetext {
+  color: #000000;
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+}
+
+
+.dm-logo-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .35rem;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.dm-logo {
+  font-size: 3rem;
+  line-height: 1;
+  color: #222;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,.08));
+  transition: transform .4s ease, color .3s ease;
+}
+
+.dm-label {
+  font-size: .95rem;
+  color: #555;
+}
+
+.dm-logo-wrap:hover .dm-logo {
+  transform: translateY(-4px) scale(1.04);
+}
+
+/* Entrance animations triggered by JS/IntersectionObserver */
+.dm-animate-left.active { animation: dmSlideLeft .6s ease forwards; }
+.dm-animate-up.active { animation: dmFadeUp .6s .1s ease forwards; }
+.dm-animate-right.active { animation: dmSlideRight .6s ease forwards; }
+
+@keyframes dmSlideLeft {
+  from { transform: translateX(-24px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+@keyframes dmSlideRight {
+  from { transform: translateX(24px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+@keyframes dmFadeUp {
+  from { transform: translateY(14px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+/* Badges */
+.dm-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .75rem;
+  justify-content: center;
+}
+.dm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem .65rem;
+  border-radius: 999px;
+  font-size: .9rem;
+  color: #222;
+  background-color: #76d6c0;
+  box-shadow: 0 2px 6px rgba(13,59,102,.06);
+}

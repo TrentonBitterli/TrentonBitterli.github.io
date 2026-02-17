@@ -97,6 +97,44 @@
     </div>
   </section>
 
+  <!--Intune Device Management -->
+  <section id="device-management" class="container py-5 text-center">
+    <hr class="full">
+    <h3 class="text mb-3">Managing Apple & Samsung Devices with Microsoft Intune</h3>
+    <p class="Intunetext">
+      Enrolling, Securing, and keeping devices compliant across <strong>iOS/iPadOS</strong> and <strong>Android Enterprise </strong> using <strong>Microsoft Intune</strong>.
+    </p>
+
+  <!-- Logo row -->
+  <div class="row justify-content-center align-items-center mb-4">
+    <div class="col-4 col-md-3 mb-3">
+      <div class="dm-logo-wrap dm-animate-left">
+        <i class="fa-brands fa-apple dm-logo"></i>
+        <span class="dm-label">Apple</span>
+      </div>
+    </div>
+    <div class="col-4 col-md-3 mb-3">
+      <div class="dm-logo-wrap dm-animate-right">
+        <i class="fa-brands fa-android dm-logo samsung"></i>
+        <span class="dm-label">Samsung</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick capability badges -->
+  <div class="row g-3 justify-content-center">
+    <div class="col-12 col-md-10">
+      <div class="dm-badges">
+        <div class="dm-badge"><i class="fa-solid fa-mobile-screen-button"></i> Device Enrollment</div>
+        <div class="dm-badge"><i class="fa-solid fa-circle-check"></i> Compliance Policies</div>
+        <div class="dm-badge"><i class="fa-solid fa-shield-halved"></i> Configuration Profiles</div>
+        <div class="dm-badge"><i class="fa-solid fa-wifi"></i> App Deployment & Updates</div>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
   <!-- PORTFOLIO -->
   <section id="portfolio-container" class="container text-center py-5">
     <hr class="full">
@@ -145,5 +183,28 @@
       banner.addEventListener('touchstart', launchConfetti);
     });
   </script>
+
+  <!-- LOGO Animations -->
+   <script>
+  // Animate logos when the section is in view
+  (function () {
+    const targets = document.querySelectorAll('.dm-animate-left, .dm-animate-up, .dm-animate-right');
+    if (!('IntersectionObserver' in window)) {
+      // Fallback: just activate immediately
+      targets.forEach(el => el.classList.add('active'));
+      return;
+    }
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('active');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.35 });
+
+    targets.forEach(t => io.observe(t));
+  })();
+</script>
 </body>
 </html>
