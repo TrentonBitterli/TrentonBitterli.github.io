@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script src="https://kit.fontawesome.com/7408eeb0e6.js" crossorigin="anonymous"></script>
@@ -18,9 +19,8 @@
   <!-- NAV -->
   <nav class="navbar navbar-expand-lg navColor">
     <div class="container-fluid navColor">
-      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
-        aria-label="Toggle navigation">
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -42,26 +42,25 @@
 
   <!-- BIO -->
   <section class="container text-center">
-   <div id="bio-tab" class="container py-4 mb-4">
-  <div class="row align-items-center">
-    <div class="col-md-4 text-center">
-      <img src="Images/Gifs/TrentonBio.jpg" 
-           alt="Profile Picture" 
-           class="img-fluid rounded mb-3" loading="lazy">
-    </div>
-    <div class="col-md-8">
-      <div id="achievement-banner" class="achievement-banner mb-3">
-        <span>• CompTIA A+ Certified!</span>
+    <div id="bio-tab" class="container py-4 mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="Images/Gifs/TrentonBio.jpg" alt="Profile Picture" class="img-fluid rounded mb-3" loading="lazy">
+        </div>
+        <div class="col-md-8">
+          <div id="achievement-banner" class="achievement-banner mb-3">
+            <span>• CompTIA A+ Certified!</span>
+          </div>
+          <p class="bioText">Boise State GIMM Alumni</p>
+          <p class="bioText">
+            I am currently working as an <strong>IT Specialist</strong> at TriState Medical Health Hospital where
+            I provide hands-on and technical support that keeps hospital staff productive. I am passionate about
+            using my technical skills to support various operations while continuing to grow as a developer and IT
+            professional.
+          </p>
+        </div>
       </div>
-      <p class="bioText">Boise State GIMM Alumni</p>
-      <p class="bioText">
-        I am currently working as an <strong>IT Specialist</strong> at TriState Medical Health Hospital where
-        I provide hands-on and technical support that keeps hospital staff productive. I am passionate about
-        using my technical skills to support various operations while continuing to grow as a developer and IT professional.
-      </p>
     </div>
-  </div>
-</div>
 
   </section>
 
@@ -102,36 +101,44 @@
     <hr class="full">
     <h3 class="text mb-3">Managing Apple & Samsung Devices with Microsoft Intune</h3>
     <p class="Intunetext">
-      Enrolling, Securing, and keeping devices compliant across <strong>iOS/iPadOS</strong> and <strong>Android Enterprise </strong> using <strong>Microsoft Intune</strong>.
+      Enrolling, Securing, and keeping devices compliant across <strong>iOS/iPadOS</strong> and <strong>Android
+        Enterprise </strong> using <strong>Microsoft Intune</strong>.
     </p>
 
-  <!-- Logo row -->
-  <div class="row justify-content-center align-items-center mb-4">
-    <div class="col-4 col-md-3 mb-3">
-      <div class="dm-logo-wrap dm-animate-left">
-        <i class="fa-brands fa-apple dm-logo"></i>
-        <span class="dm-label">Apple</span>
+    <!-- Logo row -->
+    <div class="row justify-content-center align-items-center mb-4">
+      <div class="col-4 col-md-3 mb-3">
+        <div class="dm-logo-wrap dm-animate-left">
+          <i class="fa-brands fa-apple dm-logo"></i>
+          <span class="dm-label">Apple</span>
+        </div>
+      </div>
+      <div class="col-4 col-md-3 mb-3">
+        <div class="dm-logo-wrap dm-animate-right">
+          <i class="fa-brands fa-android dm-logo samsung"></i>
+          <span class="dm-label">Android</span>
+        </div>
       </div>
     </div>
-    <div class="col-4 col-md-3 mb-3">
-      <div class="dm-logo-wrap dm-animate-right">
-        <i class="fa-brands fa-android dm-logo samsung"></i>
-        <span class="dm-label">Samsung</span>
-      </div>
-    </div>
-  </div>
 
-  <!-- Quick capability badges -->
-  <div class="row g-3 justify-content-center">
-    <div class="col-12 col-md-10">
-      <div class="dm-badges">
-        <div class="dm-badge"><i class="fa-solid fa-mobile-screen-button"></i> Device Enrollment</div>
-        <div class="dm-badge"><i class="fa-solid fa-circle-check"></i> Compliance Policies</div>
-        <div class="dm-badge"><i class="fa-solid fa-shield-halved"></i> Configuration Profiles</div>
-        <div class="dm-badge"><i class="fa-solid fa-wifi"></i> App Deployment & Updates</div>
+    <!-- Quick capability badges -->
+    <div class="row g-3 justify-content-center">
+      <div class="col-12 col-md-10">
+        <div class="dm-badges">
+   
+<!-- Trigger button -->
+<label for="modal-toggle" class="CapabilityButton">
+  <div class="dm-badge">
+    <i class="fa-solid fa-mobile-screen-button"></i> Device Enrollment
+  </div>
+</label>
+
+          <div class="dm-badge"><i class="fa-solid fa-circle-check"></i> Compliance Policies</div>
+          <div class="dm-badge"><i class="fa-solid fa-shield-halved"></i> Configuration Profiles</div>
+          <div class="dm-badge"><i class="fa-solid fa-wifi"></i> App Deployment & Updates</div>
+        </div>
       </div>
     </div>
-  </div>
 
   </section>
 
@@ -157,7 +164,8 @@
     <hr class="full">
     <h3 class="text">Contact Me</h3>
     <a class="text" href="mailto:TrentonBitterli@u.boisestate.edu"><i class="fa-solid fa-envelope increaseIcon"></i></a>
-    <a class="text" href="https://www.linkedin.com/in/trenton-bitterli-801866262/"><i class="fa-brands fa-linkedin-in increaseIcon"></i></a>
+    <a class="text" href="https://www.linkedin.com/in/trenton-bitterli-801866262/"><i
+        class="fa-brands fa-linkedin-in increaseIcon"></i></a>
     <a class="text" href="https://github.com/TrentonBitterli"><i class="fa-brands fa-github increaseIcon"></i></a>
     <div class="bottomPadding"></div>
     <h3 class="text">Resume</h3>
@@ -185,26 +193,86 @@
   </script>
 
   <!-- LOGO Animations -->
-   <script>
-  // Animate logos when the section is in view
-  (function () {
-    const targets = document.querySelectorAll('.dm-animate-left, .dm-animate-up, .dm-animate-right');
-    if (!('IntersectionObserver' in window)) {
-      // Fallback: just activate immediately
-      targets.forEach(el => el.classList.add('active'));
-      return;
-    }
-    const io = new IntersectionObserver((entries, obs) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('active');
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.35 });
+  <script>
+    // Animate logos when the section is in view
+    (function () {
+      const targets = document.querySelectorAll('.dm-animate-left, .dm-animate-up, .dm-animate-right');
+      if (!('IntersectionObserver' in window)) {
+        // Fallback: just activate immediately
+        targets.forEach(el => el.classList.add('active'));
+        return;
+      }
+      const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('active');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.35 });
 
-    targets.forEach(t => io.observe(t));
-  })();
-</script>
+      targets.forEach(t => io.observe(t));
+    })();
+  </script>
+
+<input type="checkbox" id="modal-toggle" hidden>
+
+<!-- Modal overlay Example
+<div class="simple-modal">
+  <label for="modal-toggle" class="modal-bg"></label>
+
+  <div class="modal-box">
+    <h3 class="bioText"><u>Device Enrollment:</u></h3>
+    <p class="bioText">
+      Here I can place details about device enrollment for Apple and Android
+      using Microsoft Intune.
+    </p>
+
+    <label for="modal-toggle" class="close-btn">Close</label>
+  </div>
+</div>
+!-->
+
+
+<!-- Modal overlay -->
+<div class="simple-modal">
+  <!-- Click outside to close -->
+  <label for="modal-toggle" class="modal-bg" aria-label="Close"></label>
+
+  <!-- Modal panel -->
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="enroll-title">
+    <h3 id="enroll-title" class="modal-title">Device Enrollment</h3>
+
+    <!-- Two-column content -->
+    <div class="modal-columns">
+      <!-- Apple side -->
+      <section class="modal-col">
+        <header class="col-header">
+          <h4 class="whiteText"><u>Apple Devices:</u></h4>
+        </header>
+        <center>
+          <p class="whiteText">To enroll Apple devices into Microsoft Intune, I begin by scanning each device with Apple Configurator, 
+            which adds it to our Apple Business Manager. From there, we assign it to Intune using our Enrollment Program token. Once the 
+            device syncs from Apple Business Manager into Intune, it becomes available for device management.</p></center>
+      </section>
+
+      <!-- Android side -->
+      <section class="modal-col">
+        <header class="col-header">
+          <h4 class="whiteText"><u>Android Devices:</u></h4>
+        </header>
+          <center><p class="whiteText">Text Here</p></center>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="modal-actions">
+      <label for="modal-toggle" class="close-btn" aria-label="Close">Close</label>
+    </div>
+  </div>
+</div>
+
+
 </body>
+
 </html>
