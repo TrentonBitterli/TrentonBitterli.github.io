@@ -171,7 +171,6 @@ hr {
   text-shadow: 2px 2px 5px #212121;
 }
 
-
 .largeCard {
   border: 1px solid #d1ebf0;
   margin: auto;
@@ -438,7 +437,6 @@ main {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 .achievement-banner {
   margin-top: 20px;
   background-color: #76d6c0;
@@ -452,7 +450,6 @@ main {
   animation: slideIn 1s ease-out forwards;
   text-align: center;
 }
-
 
 @keyframes slideIn {
   from {
@@ -470,7 +467,6 @@ main {
   font-family: 'Noto Serif', serif;
   font-size: 20px;
 }
-
 
 .dm-logo-wrap {
   display: inline-flex;
@@ -627,7 +623,6 @@ main {
   font-weight: bolder;
 }
 
-
 /* Footer actions */
 .modal-actions {
   display: flex;
@@ -665,3 +660,4 @@ label[for="modal-toggle"]:focus,
   color: #fff;
   line-height: 1.5;
 }
+
