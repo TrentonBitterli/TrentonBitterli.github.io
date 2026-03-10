@@ -133,7 +133,12 @@
   </div>
 </label>
 
-          <div class="dm-badge"><i class="fa-solid fa-circle-check"></i> Compliance Policies</div>
+<label for="modal-toggle-compliance" class="CapabilityButton">
+    <div class="dm-badge">
+        <i class="fa-solid fa-circle-check"></i> Compliance Policies
+    </div>
+</label>
+
           <div class="dm-badge"><i class="fa-solid fa-shield-halved"></i> Configuration Profiles</div>
           <div class="dm-badge"><i class="fa-solid fa-wifi"></i> App Deployment & Updates</div>
         </div>
@@ -217,21 +222,7 @@
 
 <input type="checkbox" id="modal-toggle" hidden>
 
-<!-- Modal overlay Example
-<div class="simple-modal">
-  <label for="modal-toggle" class="modal-bg"></label>
-
-  <div class="modal-box">
-    <h3 class="bioText"><u>Device Enrollment:</u></h3>
-    <p class="bioText">
-      Here I can place details about device enrollment for Apple and Android
-      using Microsoft Intune.
-    </p>
-
-    <label for="modal-toggle" class="close-btn">Close</label>
-  </div>
-</div>
-!-->
+<input type="checkbox" id="modal-toggle-compliance" hidden>
 
 <!-- Modal overlay -->
 <div class="simple-modal">
@@ -277,6 +268,57 @@
       <label for="modal-toggle" class="close-btn" aria-label="Close">Close</label>
     </div>
   </div>
+</div>
+
+<!-- Compliance Policies Modal -->
+<div class="simple-modal-2">
+    <!-- Click outside to close -->
+    <label for="modal-toggle-compliance" class="modal-bg" aria-label="Close"></label>
+
+    <!-- Modal panel -->
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="compliance-title">
+        
+        <div class="modal-close-x">
+            <label for="modal-toggle-compliance" aria-label="Close modal">✕</label>
+        </div>
+
+        <h3 id="compliance-title" class="modal-title">Compliance Policies</h3>
+
+        <div class="modal-columns">
+            <!-- Apple Compliance -->
+            <section class="modal-col">
+                <header class="col-header">
+                    <h4 class="whiteText"><u>Apple Compliance:</u></h4>
+                </header>
+                <center>
+                    <p class="whiteText">
+                        Apple devices must meet our Intune compliance requirements, such as 
+                        OS version requirements, encryption, and not being jailbroken. Devices that fall
+                        out of compliance will lose access to corporate resources until the are not meeting this compliance has been fixed.
+                    </p>
+                </center>
+            </section>
+
+            <!-- Android Compliance -->
+            <section class="modal-col">
+                <header class="col-header">
+                    <h4 class="whiteText"><u>Android Compliance:</u></h4>
+                </header>
+                <center>
+                    <p class="whiteText">
+                        Android devices must meet our Intune compliance requirements such as requiring a secure screen lock,
+                        OS version requirements and encryption. Devices that fall out of compliance will lose access to corporate 
+                        resources until the are not meeting this compliance has been fixed.
+                    </p>
+                </center>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="modal-actions">
+            <label for="modal-toggle-compliance" class="close-btn" aria-label="Close">Close</label>
+        </div>
+    </div>
 </div>
 
 </body>

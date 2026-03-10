@@ -546,8 +546,33 @@ main {
   pointer-events: auto;
 }
 
+/* Show modal when checkbox is checked */
+#modal-toggle-compliance:checked ~ .simple-modal-2 {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* Overlay */
 .simple-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+  z-index: 1050;
+
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; /* mobile smooth scroll */
+}
+
+.simple-modal-2 {
   position: fixed;
   inset: 0;
   display: flex;
