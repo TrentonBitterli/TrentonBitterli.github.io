@@ -145,7 +145,12 @@
     </div>
 </label>
 
-          <div class="dm-badge"><i class="fa-solid fa-wifi"></i> App Deployment & Updates</div>
+<label for="modal-toggle-appupdate" class="CapabilityButton">
+    <div class="dm-badge">
+        <i class="fa-solid fa-wifi"></i> App Deployment & Updates
+    </div>
+</label>
+
         </div>
       </div>
     </div>
@@ -230,6 +235,8 @@
 <input type="checkbox" id="modal-toggle-compliance" hidden>
 
 <input type="checkbox" id="modal-toggle-profiles" hidden>
+
+<input type="checkbox" id="modal-toggle-appupdate" hidden>
 
 <!-- Modal overlay -->
 <div class="simple-modal">
@@ -379,6 +386,60 @@
         <!-- Footer -->
         <div class="modal-actions">
             <label for="modal-toggle-profiles" class="close-btn" aria-label="Close">Close</label>
+        </div>
+    </div>
+</div>
+
+<!-- App Deployment/Updates Modal -->
+<div class="simple-modal-4">
+    <!-- Click outside to close -->
+    <label for="modal-toggle-appupdate" class="modal-bg" aria-label="Close"></label>
+
+    <!-- Modal panel -->
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="appupdate-title">
+        
+        <div class="modal-close-x">
+            <label for="modal-toggle-appupdate" aria-label="Close modal">✕</label>
+        </div>
+
+        <h3 id="appupdate-title" class="modal-title">App Deployment and Updates</h3>
+
+        <div class="modal-columns">
+            <!-- Apple App and Update -->
+            <section class="modal-col">
+                <header class="col-header">
+                    <h4 class="whiteText"><u>Apple App Deployment and Updates:</u></h4>
+                </header>
+                <center>
+                    <p class="whiteText">
+                        For Apple devices in our organization, I start by obtaining the necessary apps through 
+                        Apple Business Manager. Once the licenses sync over, I add those apps to our App Restrictions 
+                        configuration policy in Intune. After that, I place them into the home screen layout I’ve set up depending on what
+                        department is using the iPad so they appear automatically when the iPad checks in. App updates are managed through 
+                        Apple Business Manager, where I typically rely on automatic updates to keep everything current.
+                    </p>
+                </center>
+            </section>
+
+            <!-- Android App and Update -->
+            <section class="modal-col">
+                <header class="col-header">
+                    <h4 class="whiteText"><u>Android App Deployment and Updates:</u></h4>
+                </header>
+                <center>
+                    <p class="whiteText">
+                      For Android devices in our organization, I add apps to the tablets through the Managed Google Play store. 
+                      From there, I assign each app to the appropriate groups, which are organized by department based on who needs what applications. 
+                      Once the tablet syncs with Intune, the app automatically appears on the home screen. App updates are set to install automatically as 
+                      they become available.
+                    </p>
+                </center>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="modal-actions">
+            <label for="modal-toggle-appupdate" class="close-btn" aria-label="Close">Close</label>
         </div>
     </div>
 </div>
